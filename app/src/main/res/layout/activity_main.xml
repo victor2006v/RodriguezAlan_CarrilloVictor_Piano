@@ -1,18 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
 
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:contentDescription="C2"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/d2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="D2"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/e2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="E2"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/f2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="F2"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/g2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="G2"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/a2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="A2"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/b2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="B2"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="C3"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/d3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="D3"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/e3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="E3"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/f3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="F3"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/g3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="G3"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/a3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="A3"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/b3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="B3"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/c4"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:contentDescription="C4"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+        <ImageButton
+            android:id="@+id/d4"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="D4"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtecla" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
