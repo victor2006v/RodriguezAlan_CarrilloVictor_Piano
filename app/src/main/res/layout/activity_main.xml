@@ -17,16 +17,17 @@
 
         <!-- OCTAVE 1 -->
 
-        <Button
+        <ImageButton
             android:id="@+id/keyC1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
+            android:backgroundTint="@null"
             android:text="c1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyD1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -35,7 +36,7 @@
             android:background="@drawable/white_key_selector"
             android:text="d1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyE1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -44,7 +45,7 @@
             android:background="@drawable/white_key_selector"
             android:text="e1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyF1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -53,7 +54,7 @@
             android:background="@drawable/white_key_selector"
             android:text="f1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyG1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -62,7 +63,7 @@
             android:background="@drawable/white_key_selector"
             android:text="g1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyA1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -71,7 +72,7 @@
             android:background="@drawable/white_key_selector"
             android:text="a1" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyB1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -82,7 +83,7 @@
 
         <!-- OCTAVE 2 -->
 
-        <Button
+        <ImageButton
             android:id="@+id/keyC2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -91,7 +92,7 @@
             android:background="@drawable/white_key_selector"
             android:text="c2" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyD2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -100,7 +101,7 @@
             android:background="@drawable/white_key_selector"
             android:text="d2" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyE2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -109,7 +110,7 @@
             android:background="@drawable/white_key_selector"
             android:text="e2" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyF2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -118,7 +119,7 @@
             android:background="@drawable/white_key_selector"
             android:text="f2" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyG2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -127,7 +128,7 @@
             android:background="@drawable/white_key_selector"
             android:text="g2" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyA2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -136,7 +137,7 @@
             android:background="@drawable/white_key_selector"
             android:text="a2" />
 
-        <Button
+        <ImageButton
             android:id="@+id/keyB2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -151,7 +152,7 @@
 
     <!-- OCTAVE 1 -->
 
-    <Button
+    <ImageButton
         android:id="@+id/keyCs1"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -160,7 +161,7 @@
         android:elevation="10dp"
         android:text="cs1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyDs1"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -169,7 +170,7 @@
         android:elevation="10dp"
         android:text="ds1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyFs1"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -178,7 +179,7 @@
         android:elevation="10dp"
         android:text="fs1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyGs1"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -187,7 +188,7 @@
         android:elevation="10dp"
         android:text="gs1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyAs1"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -198,7 +199,7 @@
 
     <!-- OCTAVE 2 -->
 
-    <Button
+    <ImageButton
         android:id="@+id/keyCs2"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -207,7 +208,7 @@
         android:elevation="10dp"
         android:text="cs2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyDs2"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -216,7 +217,7 @@
         android:elevation="10dp"
         android:text="ds2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyFs2"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -225,7 +226,7 @@
         android:elevation="10dp"
         android:text="fs2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyGs2"
         android:layout_width="48dp"
         android:layout_height="220dp"
@@ -234,9 +235,9 @@
         android:elevation="10dp"
         android:text="gs2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/keyAs2"
-        android:layout_width="42dp"
+        android:layout_width="48dp"
         android:layout_height="220dp"
         android:layout_marginStart="708dp"
         android:background="@drawable/black_key_selector"
