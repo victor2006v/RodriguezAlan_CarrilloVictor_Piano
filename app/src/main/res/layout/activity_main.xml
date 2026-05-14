@@ -1,18 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1E1E1E"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- WHITE KEYS -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/whiteKeysContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="14">
+
+        <!-- OCTAVE 1 -->
+
+        <ImageButton
+            android:id="@+id/keyC1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:backgroundTint="@null"
+            android:text="c1" />
+
+        <ImageButton
+            android:id="@+id/keyD1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="d1" />
+
+        <ImageButton
+            android:id="@+id/keyE1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="e1" />
+
+        <ImageButton
+            android:id="@+id/keyF1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="f1" />
+
+        <ImageButton
+            android:id="@+id/keyG1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="g1" />
+
+        <ImageButton
+            android:id="@+id/keyA1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="a1" />
+
+        <ImageButton
+            android:id="@+id/keyB1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="b1" />
+
+        <!-- OCTAVE 2 -->
+
+        <ImageButton
+            android:id="@+id/keyC2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="c2" />
+
+        <ImageButton
+            android:id="@+id/keyD2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="d2" />
+
+        <ImageButton
+            android:id="@+id/keyE2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="e2" />
+
+        <ImageButton
+            android:id="@+id/keyF2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="f2" />
+
+        <ImageButton
+            android:id="@+id/keyG2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="g2" />
+
+        <ImageButton
+            android:id="@+id/keyA2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="a2" />
+
+        <ImageButton
+            android:id="@+id/keyB2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="b2" />
+
+    </LinearLayout>
+
+    <!-- BLACK KEYS -->
+
+    <!-- OCTAVE 1 -->
+
+    <ImageButton
+        android:id="@+id/keyCs1"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="cs1" />
+
+    <ImageButton
+        android:id="@+id/keyDs1"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="90dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="ds1" />
+
+    <ImageButton
+        android:id="@+id/keyFs1"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="195dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="fs1" />
+
+    <ImageButton
+        android:id="@+id/keyGs1"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="255dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="gs1" />
+
+    <ImageButton
+        android:id="@+id/keyAs1"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="315dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="as1" />
+
+    <!-- OCTAVE 2 -->
+
+    <ImageButton
+        android:id="@+id/keyCs2"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="425dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="cs2" />
+
+    <ImageButton
+        android:id="@+id/keyDs2"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="480dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="ds2" />
+
+    <ImageButton
+        android:id="@+id/keyFs2"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="590dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="fs2" />
+
+    <ImageButton
+        android:id="@+id/keyGs2"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="648dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="gs2" />
+
+    <ImageButton
+        android:id="@+id/keyAs2"
+        android:layout_width="48dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="708dp"
+        android:background="@drawable/black_key_selector"
+        android:elevation="10dp"
+        android:text="as2" />
+
+</FrameLayout>
