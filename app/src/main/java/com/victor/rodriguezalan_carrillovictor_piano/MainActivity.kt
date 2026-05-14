@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * VICTOR DAY 2 (EXCELLENCE & MULTITOUCH): 
+     * VICTOR DAY 2 MULTITOUCH:
      * Centralized key initialization that handles sound triggering,
      * visual press states, and accessibility requirements.
      */
