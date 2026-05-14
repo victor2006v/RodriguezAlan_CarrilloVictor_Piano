@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:weightSum="14">
+        android:weightSum="15">
 
         <!-- OCTAVE 1 -->
 
@@ -158,6 +158,18 @@
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
             android:text="b2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!-- OCTAVE 3 START -->
+
+        <ImageButton
+            android:id="@+id/keyC3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_key_selector"
+            android:text="c3"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>

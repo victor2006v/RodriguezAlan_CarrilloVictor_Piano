@@ -38,12 +38,23 @@ object SoundManager {
     }
 
     /**
-     * Plays a sound by its resource ID.
+     * Plays a sound by its resource ID and returns the stream ID.
      */
-    fun playSound(resId: Int) {
+    fun playSound(resId: Int): Int {
         val soundId = soundMap[resId]
-        if (soundId != null) {
+        return if (soundId != null) {
             soundPool.play(soundId, 1f, 1f, 1, 0, 1f)
+        } else {
+            0
+        }
+    }
+
+    /**
+     * Stops a specific sound stream.
+     */
+    fun stopSound(streamId: Int) {
+        if (streamId != 0) {
+            soundPool.stop(streamId)
         }
     }
 
