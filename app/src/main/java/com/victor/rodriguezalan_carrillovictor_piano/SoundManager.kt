@@ -37,13 +37,29 @@ object SoundManager {
         }
     }
 
+    private val activeStreams = HashMap<Int, Int>()
+
     /**
-     * Plays a sound by its resource ID.
+     * Plays a sound by its resource ID and returns the stream ID.
      */
-    fun playSound(resId: Int) {
+    fun playSound(resId: Int): Int {
         val soundId = soundMap[resId]
         if (soundId != null) {
-            soundPool.play(soundId, 1f, 1f, 1, 0, 1f)
+            val streamId = soundPool.play(soundId, 1f, 1f, 1, 0, 1f)
+            activeStreams[resId] = streamId
+            return streamId
+        }
+        return 0
+    }
+
+    /**
+     * Stops a sound by its resource ID.
+     */
+    fun stopSound(resId: Int) {
+        val streamId = activeStreams[resId]
+        if (streamId != null) {
+            soundPool.stop(streamId)
+            activeStreams.remove(resId)
         }
     }
 
@@ -53,5 +69,6 @@ object SoundManager {
     fun release() {
         soundPool.release()
         soundMap.clear()
+        activeStreams.clear()
     }
 }
