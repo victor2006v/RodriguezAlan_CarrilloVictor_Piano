@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
      * Centralized key initialization that handles sound triggering,
      * visual press states, and accessibility requirements.
      */
+    /*
     @SuppressLint("ClickableViewAccessibility")
     private fun setupKey(view: View?, soundId: Int) {
         view?.setOnTouchListener { v, event ->
@@ -67,6 +68,39 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             true // Consumes the event to allow simultaneous touches on different views
+        }
+    }*/
+
+    @SuppressLint("ClickableViewAccessibility")
+    private fun setupKey(view: View?, soundId: Int) {
+
+        view?.setOnTouchListener { v, event ->
+
+            when (event.actionMasked) {
+
+                MotionEvent.ACTION_DOWN,
+                MotionEvent.ACTION_POINTER_DOWN -> {
+
+                    SoundManager.playSound(soundId)
+
+                    v.isPressed = true
+                    v.invalidate()
+
+                    v.performClick()
+                }
+
+                MotionEvent.ACTION_UP,
+                MotionEvent.ACTION_POINTER_UP,
+                MotionEvent.ACTION_CANCEL -> {
+
+                    SoundManager.stopSound(soundId)
+
+                    v.isPressed = false
+                    v.invalidate()
+                }
+            }
+
+            true
         }
     }
 

@@ -6,7 +6,7 @@
     android:background="#1E1E1E"
     tools:context=".MainActivity">
 
-    <!-- WHITE KEYS -->
+    <!-- tECLAS bLANCAS -->
 
     <LinearLayout
         android:id="@+id/whiteKeysContainer"
@@ -15,7 +15,6 @@
         android:orientation="horizontal"
         android:weightSum="14">
 
-        <!-- OCTAVE 1 -->
 
         <ImageButton
             android:id="@+id/keyC1"
@@ -25,7 +24,6 @@
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
             android:backgroundTint="@null"
-            android:text="c1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -35,7 +33,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="d1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -45,7 +42,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="e1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -55,7 +51,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="f1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -65,7 +60,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="g1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -75,7 +69,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="a1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -85,10 +78,8 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="b1"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <!-- OCTAVE 2 -->
 
         <ImageButton
             android:id="@+id/keyC2"
@@ -97,7 +88,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="c2"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -107,7 +97,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="d2"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -117,7 +106,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="e2"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -127,7 +115,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="f2"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -137,7 +124,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="g2"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -147,7 +133,6 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="a2"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -157,115 +142,175 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/white_key_selector"
-            android:text="b2"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
-    <!-- BLACK KEYS -->
+    <!-- TECLAS NEGRAS -->
 
-    <!-- OCTAVE 1 -->
-
-    <ImageButton
-        android:id="@+id/keyCs1"
-        android:layout_width="48dp"
+    <LinearLayout
+        android:id="@+id/blackKeysContainer"
+        android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:layout_marginStart="30dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="cs1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:orientation="horizontal"
+        android:weightSum="14"
+        android:elevation="10dp">
 
-    <ImageButton
-        android:id="@+id/keyDs1"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="90dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="ds1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.65" />
 
-    <ImageButton
-        android:id="@+id/keyFs1"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="195dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="fs1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/keyCs1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/keyGs1"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="255dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="gs1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
 
-    <ImageButton
-        android:id="@+id/keyAs1"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="315dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="as1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/keyDs1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <!-- OCTAVE 2 -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.65" />
 
-    <ImageButton
-        android:id="@+id/keyCs2"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="425dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="cs2"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.65" />
 
-    <ImageButton
-        android:id="@+id/keyDs2"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="480dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="ds2"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/keyFs1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/keyFs2"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="590dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="fs2"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
 
-    <ImageButton
-        android:id="@+id/keyGs2"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="648dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="gs2"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/keyGs1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/keyAs2"
-        android:layout_width="48dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="708dp"
-        android:background="@drawable/black_key_selector"
-        android:elevation="10dp"
-        android:text="as2"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <ImageButton
+            android:id="@+id/keyAs1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.65" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.65" />
+
+        <ImageButton
+            android:id="@+id/keyCs2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <ImageButton
+            android:id="@+id/keyDs2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.65" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.65" />
+
+        <ImageButton
+            android:id="@+id/keyFs2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <ImageButton
+            android:id="@+id/keyGs2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <ImageButton
+            android:id="@+id/keyAs2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/black_key_selector"
+            android:backgroundTint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
 
 </FrameLayout>
